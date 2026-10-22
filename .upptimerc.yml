@@ -8,17 +8,25 @@ sites:
 
 status-website:
   publish: true # private repo: build the real page instead of a 404 stub
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.robolyst.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Robolyst Status
-  introTitle: "**Robolyst** service status"
+  logoUrl: /robolyst-icon.svg
+  faviconSvg: /robolyst-icon.svg
+  favicon: /favicon-96x96.png
+  themeUrl: /robolyst.css
+  introTitle: Robolyst status
   introMessage: Live uptime for Robolyst, checked every 5 minutes.
-  navbar:
-    - title: Status
-      href: /
+  customHeadHtml: >-
+    <meta name="theme-color" content="#020410">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=JetBrains+Mono:wght@500;700&display=swap">
+  navbar: []
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+graphBackgroundColor: "rgba(138, 79, 255, 0.18)"
+graphBorderColor: "#8a4fff"
+
+i18n:
+  allSystemsOperational: All systems operational
+  footer: Robolyst · Robotics Catalyst Foundation
