@@ -10,15 +10,15 @@ status-website:
   publish: true # private repo: build the real page instead of a 404 stub
   cname: status.robolyst.org
   name: Robolyst Status
-  logoUrl: /robolyst-icon.svg
-  faviconSvg: /robolyst-icon.svg
-  favicon: /favicon-96x96.png
-  themeUrl: /robolyst.css
+  logoUrl: https://status.robolyst.org/robolyst-icon.svg
+  faviconSvg: https://status.robolyst.org/robolyst-icon.svg
+  favicon: https://status.robolyst.org/favicon-96x96.png
+  themeUrl: https://status.robolyst.org/robolyst.css
   introTitle: Robolyst status
   introMessage: Live uptime for Robolyst, checked every 5 minutes.
   customHeadHtml: >-
     <meta name="theme-color" content="#020410">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="https://status.robolyst.org/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=JetBrains+Mono:wght@500;700&display=swap">
