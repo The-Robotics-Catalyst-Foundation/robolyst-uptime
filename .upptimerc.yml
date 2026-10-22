@@ -7,6 +7,7 @@ sites:
     url: https://robolyst.org
 
 status-website:
+  publish: true # private repo: build the real page instead of a 404 stub
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.robolyst.org
