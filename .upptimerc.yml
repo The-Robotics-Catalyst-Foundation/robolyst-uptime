@@ -15,18 +15,31 @@ status-website:
   favicon: https://status.robolyst.org/favicon-96x96.png
   themeUrl: https://status.robolyst.org/robolyst.css
   introTitle: Robolyst status
-  introMessage: Live uptime for Robolyst, checked every 5 minutes.
+  introMessage: Checked every few minutes.
   customHeadHtml: >-
     <meta name="theme-color" content="#020410">
     <link rel="apple-touch-icon" href="https://status.robolyst.org/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=JetBrains+Mono:wght@500;700&display=swap">
-  navbar: []
+  scripts:
+    - src: https://status.robolyst.org/robolyst.js
+      async: true
+  navbar:
+    - title: robolyst.org ↗
+      href: https://robolyst.org
 
 graphBackgroundColor: "rgba(138, 79, 255, 0.18)"
 graphBorderColor: "#8a4fff"
 
 i18n:
   allSystemsOperational: All systems operational
-  footer: Robolyst · Robotics Catalyst Foundation
+  liveStatus: Services
+  activeIncidents: Ongoing incidents
+  pastIncidents: Past incidents
+  activeIncidentSummary: Opened $DATE
+  pastIncidentsResolved: Resolved in $MINUTES min
+  incidentReport: "Report #$NUMBER →"
+  overallUptime: "Uptime $UPTIME"
+  averageResponseTime: "Response $TIMEms"
+  footer: "[robolyst.org](https://robolyst.org) · [Incident history]($REPO/issues?q=label%3Astatus) · The Robotics Catalyst Foundation"
